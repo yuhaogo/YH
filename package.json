@@ -1,0 +1,26 @@
+{
+  "name": "yhtest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server/bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "fis-parser-babel-5.x": "^1.4.0",
+    "fis3-hook-commonjs": "^0.1.26",
+    "fis3-hook-node_modules": "^2.2.8",
+    "fis3-postpackager-loader": "^2.1.4",
+    "process": "^0.11.9"
+  }
+}
