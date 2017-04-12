@@ -1,11 +1,14 @@
 fis.set('project.files', '/index.html'); // 按需编译。
 fis.set('public', '/public'); // 按需编译。
 
-fis.match('/client/modules/**',{
-    release:'${public}/modules/**'
+fis.match('/client/modules/(**)',{
+    release:'${public}/modules/$1'
 })
-fis.match('/client/static/**',{
-    release:'${public}/static/**'
+fis.match('/client/static/(**)',{
+    release:'${public}/static/$1'
+})
+fis.match('/node_modules/(**)',{
+    release:'node_modules/$1'
 })
 // 采用 commonjs 模块化方案。
 fis.hook('commonjs', {
